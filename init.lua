@@ -219,7 +219,8 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
--- NOTE: Locally developed plugins
+-- NOTE: Locally developed plugins for testing
+-- TODO: Install these plugins through Lazy when in public git
 vim.opt.runtimepath:append '/mnt/d/code/nvimchronize'
 package.path = package.path .. ';/mnt/d/code/nvimchronize/?.lua'
 
